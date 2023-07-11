@@ -37,6 +37,7 @@ message ChaincodeMessage {
         GET_STATE_METADATA = 20;
         PUT_STATE_METADATA = 21;
         GET_PRIVATE_DATA_HASH = 22;
+        GET_HISTORY_FOR_KEYS = 23;
     }
 
     Type type = 1;
@@ -129,6 +130,10 @@ message QueryMetadata {
 // for which the historical values need to be retrieved.
 message GetHistoryForKey {
     string key = 1;
+}
+
+message GetHistoryForKeys {
+    repeated string keys = 1;
 }
 
 message QueryStateNext {
