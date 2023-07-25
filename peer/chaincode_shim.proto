@@ -38,6 +38,7 @@ message ChaincodeMessage {
         PUT_STATE_METADATA = 21;
         GET_PRIVATE_DATA_HASH = 22;
         GET_HISTORY_FOR_KEYS = 23;
+        GET_VERSION_FOR_KEY = 24;
     }
 
     Type type = 1;
