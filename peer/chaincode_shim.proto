@@ -137,9 +137,10 @@ message GetHistoryForKeys {
     repeated string keys = 1;
 }
 
-message GetVersionForKey {
+message GetVersionsForKey {
     string key = 1;
-    uint64 version = 2;
+    uint64 startVersion = 2;
+    uint64 endVersion = 3;
 }
 
 message QueryStateNext {
